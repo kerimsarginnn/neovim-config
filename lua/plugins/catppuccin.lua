@@ -9,6 +9,7 @@ return {
 				treesitter = true,
 				mason = true,
 				cmp = true,
+				barbar = true,
 			},
 			transparent_background = true,
 			custom_highlights = function(colors)
