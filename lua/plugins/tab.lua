@@ -32,6 +32,11 @@ return {
 		vim.keymap.set("n", "<leader>x", ":BufferClose<CR>", {})
 		vim.keymap.set("n", "<Tab>", ":BufferNext<CR>", { noremap = true, silent = true })
 		vim.keymap.set("n", "<S-Tab>", ":BufferPrevious<CR>", { noremap = true, silent = true })
+		vim.api.nvim_set_hl(0, "BufferCurrent", { bg = "none" })
+		vim.api.nvim_set_hl(0, "BufferVisible", { bg = "none" })
+		vim.api.nvim_set_hl(0, "BufferAlternate", { bg = "none" })
+		vim.api.nvim_set_hl(0, "BufferInactive", { bg = "none", fg = "#aaaaaa" })
+		vim.api.nvim_set_hl(0, "BufferInactiveSign", { bg = "none", fg = "" })
 	end,
 	opts = {
 		-- lazy.nvim will automatically call setup for you. put your options here, anything missing will use the default:
