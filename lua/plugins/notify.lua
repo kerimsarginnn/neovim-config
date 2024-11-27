@@ -5,6 +5,7 @@ return {
 		require("notify").setup({
 			stages = "fade", -- Animasyon stili
 			timeout = 3000, -- Mesajın ekranda kalma süresi
+			background_colour = "#000000",
 		})
 	end,
 }

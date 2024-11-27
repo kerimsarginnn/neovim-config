@@ -10,6 +10,7 @@ return {
 				mason = true,
 				cmp = true,
 				barbar = true,
+				notify = true,
 			},
 			transparent_background = true,
 			custom_highlights = function(colors)
